@@ -10,6 +10,7 @@
       <change beforePath="$PROJECT_DIR$/../Budgetfy/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Budgetfy/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DOM pig game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DOM pig game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ES6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ES6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/asynchronous.html" beforeDir="false" afterPath="$PROJECT_DIR$/asynchronous.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,13 +18,17 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/asynchronous.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+            <state relative-caret-position="144">
+              <caret line="114" column="42" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -50,11 +55,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="977" />
-    <option name="y" value="87" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="849" />
+    <option name="y" value="155" />
     <option name="width" value="886" />
-    <option name="height" value="877" />
+    <option name="height" value="696" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -108,23 +113,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560294762830</updated>
-      <workItem from="1560294764102" duration="313000" />
+      <workItem from="1560294764102" duration="11684000" />
     </task>
+    <task id="LOCAL-00001" summary="asynch ops">
+      <created>1560295147928</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1560295147928</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="313000" />
+    <option name="totallyTimeSpent" value="11684000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="886" extended-state="6" />
-    <editor active="true" />
+    <frame x="849" y="155" width="886" height="696" extended-state="0" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19007264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -152,11 +164,15 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="asynch ops" />
+    <option name="LAST_COMMIT_MESSAGE" value="asynch ops" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/asynchronous.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
+        <state relative-caret-position="144">
+          <caret line="114" column="42" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="42" />
         </state>
       </provider>
     </entry>

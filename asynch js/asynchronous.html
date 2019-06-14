@@ -9,18 +9,125 @@
 <body>
     <h1>Asynchronous JavaScript</h1>
     <script>
-        const second = () => {
-            setTimeout(()=>{
-                console.log('Asynch hey there');
-            }, 2000);
-        }
-        const first = () => {
-            console.log('hey there');
-            second();
-            console.log('The End');
+        // const second = () => {
+        //     setTimeout(()=>{
+        //         console.log('Asynch hey there');
+        //     }, 2000);
+        // }
+        // const first = () => {
+        //     console.log('hey there');
+        //     second();
+        //     console.log('The End');
+        // }
+        //
+        // first();
+        // const getIDs = new Promise((resolve, reject)=>{
+        //     setTimeout(()=>{
+        //         resolve([523, 883, 432, 974]);
+        //         //reject([523, 883, 432, 974]);
+        //
+        //     }, 1500);
+        // });
+        //
+        // const getReceipe = recID => {
+        //     return new Promise((resolve, reject) => {
+        //         setTimeout(ID => {
+        //             const recipe = {title:'Fresh tomato pasta'
+        //                             , publisher: 'Jones'};
+        //             resolve( `${ID}: ${recipe.title}`);
+        //             }, 1500, recID);
+        //     });
+        // };
+        //
+        // const getRelated = publisher => {
+        //         return new Promise((resolve, reject) => {
+        //             setTimeout(pub => {
+        //                 const recipe2 = {title:'Italian Pizza'
+        //                     , publisher: 'Jones'};
+        //                 resolve(`${pub}: ${recipe2.title}`);
+        //             }, 1500, publisher);
+        //         })  ;
+        // };
+        //
+        // async function getRecipesAw() {
+        //     const IDs = await getIDs;
+        //     console.log(IDs);
+        //     const recipe = await getReceipe(IDs[2]);
+        //     console.log(recipe);
+        //     const related = await getRelated('Jonas');
+        //     console.log(related);
+        //
+        //     return recipe;
+        // }
+        //
+        // getRecipesAw().then( result =>{
+        //         console.log(result);
+        //     }
+        // );
+
+
+        // getIDs
+        //     .then(IDs => {
+        //         console.log(IDs);
+        //         return getReceipe(IDs[2]);
+        //     })
+        //     .then(recipe => {
+        //         console.log((recipe));
+        //         return getRelated('Jones');
+        //     })
+        //     .then(recipe => {
+        //             console.log(recipe);
+        //     })
+        //     .catch(error => {
+        //         console.log('Error!');
+        //     });
+
+        function getWeather(place){
+            var url = 'https://api.openweathermap.org/data/2.5/weather?zip=' + place + '&APPID=7cd987de22d644f5499c37c781942d2f';
+            fetch(url)
+                .then(response => {
+                    if(response.ok){
+                        return response.json();
+                    } else{
+                        throw new Error('encounred an error');
+                    }
+
+                })
+                .then(data => {
+                    const today = data.weather[0].description;
+                    console.log(today);
+                })
+                .catch(error => {
+                    console.log('Error!!!');
+                    console.log(error);
+                });
         }
 
-        first();
+        getWeather('75094,us');
+
+        async function getWeatherAW(place){
+            try {
+                var url = 'https://api.openweathermap.org/data/2.5/weather?zip=' + place + '&APPID=7cd987de22d644f5499c37c781942d2f';
+                const result = await fetch(url);
+                const data = await result.json();
+
+                console.log(data);
+                const today = data.weather[0].description;
+                console.log(today);
+                return data;
+            } catch(error){
+                console.log('Error!!!');
+                console.log(error);
+            }
+
+
+        }
+        var dataLondon;
+        getWeatherAW('75094,us').then(data => {
+            dataLondon = data;
+            console.log(dataLondon);
+        });
+
     </script>
 </body>
 </html>
